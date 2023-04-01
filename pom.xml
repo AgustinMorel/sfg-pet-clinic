@@ -11,7 +11,7 @@
 
     <groupId>guru.frameworkspring</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 
     <packaging>pom</packaging>
 
@@ -75,7 +75,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:AgustinMorel/sfg-pet-clinic.git</developerConnection>
-        <tag>sfg-pet-clinic-0.0.1</tag>
+        <tag>sfg-pet-clinic-0.0.2</tag>
     </scm>
 
 </project>
