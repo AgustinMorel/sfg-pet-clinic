@@ -1,5 +1,17 @@
 package guru.springframework.sfgpetclinic.services.springdatajpa;
 
+import guru.springframework.sfgpetclinic.model.Speciality;
+import guru.springframework.sfgpetclinic.repositories.SpecialityRepository;
+import guru.springframework.sfgpetclinic.services.SpecialityService;
+
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
+
 @Service
 @Profile("springdatajpa")
 public class SpecialitySDJpaService implements SpecialityService{
@@ -24,7 +36,7 @@ public class SpecialitySDJpaService implements SpecialityService{
     }
 
     @Override
-    public Speciality save(Vet object) {
+    public Speciality save(Speciality object) {
         return specialityRepository.save(object);
         }
 

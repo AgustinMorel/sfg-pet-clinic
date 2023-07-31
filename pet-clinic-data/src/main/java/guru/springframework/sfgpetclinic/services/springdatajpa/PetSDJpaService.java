@@ -1,5 +1,12 @@
 package guru.springframework.sfgpetclinic.services.springdatajpa;
 
+import guru.springframework.sfgpetclinic.model.Pet;
+import guru.springframework.sfgpetclinic.repositories.PetRepository;
+import guru.springframework.sfgpetclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
+import java.util.HashSet;
 import java.util.Set;
 
 @Service
@@ -26,7 +33,7 @@ public class PetSDJpaService implements PetService{
     }
 
     @Override
-    public Pet save(Vet object) {
+    public Pet save(Pet object) {
         return petRepository.save(object);
         }
 
