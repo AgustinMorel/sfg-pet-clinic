@@ -12,7 +12,7 @@ jobs:
     # Be sure to update the Docker image tag below to openjdk version of your application.
     # A list of available CircleCI Docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/openjdk
     docker:
-      - image: cimg/openjdk:11.0
+    - image: cimg/openjdk:11.0
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     working_directory: ~/repo
@@ -22,20 +22,20 @@ jobs:
 
     steps:
       # Checkout the code as the first step.
-      - checkout
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "pom.xml" }}
-          - v1-dependencies-
+    - checkout
+    - restore_cache:
+        keys:
+        - v1-dependencies-{{ checksum "pom.xml" }}
+        - v1-dependencies-
 
-      # Use mvn clean and package as the standard maven build phase
-      - run: mvn install -DskipTests
+    # Use mvn clean and package as the standard maven build phase
+    - run: mvn install -DskipTests
 
-      - run: mvn dependency:go-offline
+    - run: mvn dependency:go-offline
 
-      - save_cache: 
-          paths:
-          - ~/.m2
-          key: v1-dependency-{{ checksum "pom.xml"}}
+    - save_cache: 
+        paths:
+        - ~/.m2
+        key: v1-dependencies-{{ checksum "pom.xml"}}
 
-      - run: mvn integration-test
+    - run: mvn integration-test
