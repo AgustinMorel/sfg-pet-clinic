@@ -26,6 +26,8 @@ jobs:
       - run:
           name: Test
           command: mvn test
+      - save_cache:
+          key: dependency-cache-server-{{ checksum "yarn.lock" }}
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
