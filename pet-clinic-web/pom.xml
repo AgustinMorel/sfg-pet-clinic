@@ -101,11 +101,6 @@
             <artifactId>junit-jupiter-engine</artifactId>   
             <scope>test</scope>
         </dependency>
-        <dependency>
- <groupId>javax.xml.bind</groupId>
- <artifactId>jaxb-api</artifactId>
-</dependency>
-        
     </dependencies>
     <scm>
         <tag>sfg-pet-clinic-0.0.1</tag>
