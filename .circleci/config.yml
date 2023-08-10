@@ -28,6 +28,8 @@ jobs:
           command: mvn test
       - save_cache:
           key: dependency-cache-server-{{ checksum "yarn.lock" }}
+          paths:
+            - /home/ubuntu/.m2
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
