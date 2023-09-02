@@ -4,13 +4,13 @@
     <parent>
         <artifactId>sfg-pet-clinic</artifactId>
         <groupId>guru.springframework</groupId>
-        <version>0.0.1</version>
+        <version>0.0.5-SNAPSHOT</version>
     </parent>
 
     <artifactId>pet-clinic-data</artifactId>
 
     <properties>
-        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+         <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
 
     <dependencies>
@@ -60,16 +60,6 @@
             <version>2.22.0</version>
             <scope>test</scope>
         </dependency>
-          <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>   
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -98,9 +88,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-  <scm>
-    <tag>sfg-pet-clinic-0.0.1</tag>
-  </scm>
 </project>
