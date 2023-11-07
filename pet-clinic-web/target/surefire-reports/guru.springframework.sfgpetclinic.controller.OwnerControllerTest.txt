@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: guru.springframework.sfgpetclinic.controller.OwnerControllerTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.613 s - in guru.springframework.sfgpetclinic.controller.OwnerControllerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.527 s - in guru.springframework.sfgpetclinic.controller.OwnerControllerTest
